@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My PC Setup Map</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #ecf0f1;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #00d9ff;
+      text-shadow: 0 0 8px rgba(0, 217, 255, 0.6);
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #bdc3c7;
+    }
+
+    .map-container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+
+    area {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Explore My PC Setup</h2>
+  <p>Click on the parts of the setup to zoom in.</p>
+
+  <div class="map-container">
+    <!-- Main Setup Image -->
+    <img src="https://i.imgur.com/ZJK8hOf.jpeg" usemap="#pc-map">
+  </div>
+
+  <!-- Clickable Map -->
+  <map name="pc-map">
+    <area target="_blank" alt="Keyboard & Mouse" title="Keyboard & Mouse" 
+          href="https://i.imgur.com/eX3FGOJ.jpeg" 
+          coords="383,283,235,325,299,425,674,425,470,325" shape="poly">
+
+    <area target="_blank" alt="PC Case" title="PC Case" 
+          href="https://i.imgur.com/11cNF29.jpeg" 
+          coords="396,276,386,205,376,120,278,127,190,103,101,109,138,281,228,325,276,306,303,302" shape="poly">
+
+    <area target="_blank" alt="Top of Case" title="Top of Case" 
+          href="https://i.imgur.com/ry2kR0X.png" 
+          coords="186,99,277,123,378,115,368,3,149,-1,86,2,105,104,139,104" shape="poly">
+
+    <area target="_blank" alt="Game Screen" title="Game Screen" 
+          href="https://i.imgur.com/jZ0uS3o.jpeg" 
+          coords="369,5,756,0,755,424,679,426,401,283" shape="poly">
+  </map>
+
+</body>
+</html>
