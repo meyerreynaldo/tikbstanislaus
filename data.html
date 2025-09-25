@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengertian HardSoft-ware</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons bor -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+      }
+
+      #data img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #crap {
+        text-align: center;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- right nav -->
+    <nav class="navbar">
+      <a href="#" class="navbar_logo" id="navbarLogo">.</a>
+
+      <div class="navbar-nav">
+        <a href="Meyer's Site.html"><i data-feather="user"></i>Creator</a>
+        <a href="data.html"
+          ><i data-feather="git-pull-request"></i>Kontak</a
+        >
+        <a href="exam.html"
+          ><i data-feather="file-text"></i>Hardware and Software Examples</a
+        >
+      </div>
+
+      <div class="navbar-ex">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- nav edge -->
+
+    <div id="data">
+      <img src="images/thinking.jpg" alt="Thinking Image" />
+      <div class="crap" id="crap" style="
+      font-size: 1.2rem; 
+      color: #f5f5f5; 
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 20px; 
+      border-radius: 8px; 
+      margin: 20px; 
+      line-height: 1.6; 
+      max-width: 800px; 
+      text-align: center; 
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <p>
+          Software berbentuk data digital yang tidak terlihat secara fisik, namun
+          dapat digunakan oleh pengguna komputer. Contoh dari software adalah
+          sistem operasi atau OS, aplikasi Microsoft Office, anti-virus, dan
+          lain-lain. Sedangkan... hardware adalah sebuah komponen pada sebuah komputer yang
+          dapat dilihat atau berbentuk fisik.
+        </p>
+      </div>
+    </div>
+  </body>
+  
+  <!-- Footer -->
+  <footer>
+      <div class="footer-bottom">
+        <h5>Meyer's Site in html 2024™</h5>
+      </div>
+      <ul class="socials">
+        <li>
+          <a href="https://www.instagram.com/meyer_r.k/"
+            ><i data-feather="instagram">@meyer_r.k</i
+          ></a>
+        </li>
+        <li>
+  </footer>
+  
+  <!-- icons -->
+  <script>
+    feather.replace();
+  
+    function getGreeting() {
+      const now = new Date();
+      const hours = now.getHours();
+      if (hours < 12) {
+        return "Good Morning";
+      } else if (hours < 18) {
+        return "Good Afternoon";
+      } else {
+        return "Good Evening";
+      }
+    }
+  
+    function updateGreeting() {
+      const greeting = getGreeting();
+      document.getElementById('navbarLogo').innerHTML = `Hello, ${greeting}.`;
+    }
+  
+    // Update the greeting for load
+    updateGreeting();
+  
+    // Yes this is a hacky way to update the greeting every hour
+    setInterval(updateGreeting, 3600000);
+  </script>
+  <!-- icons nd -->
+  
+  <!-- js -->
+  <script src="js/stuff.js"></script>
+
+</html>

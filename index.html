@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meyer XI-2</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons bor -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+  <!-- right nav -->
+    <nav class="navbar">
+      <a href="#" class="navbar_logo" id="navbarLogo"></a>
+      <div class="navbar-nav">
+        <a href="Meyer's Site.html"
+          ><i data-feather="user"></i>Creator</a>
+        <a href="data.html"
+          ><i data-feather="git-pull-request"></i>Kontak</a>
+        <a href="exam.html"
+          ><i data-feather="file-text"></i>Hardware and Software Examples</a>
+      </div>
+
+      <div class="navbar-ex">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <main class="biodata-page">
+      <div class="biodata-container">
+        <header class="biodata-header">MY BIODATA</header>
+
+        <section class="biodata-grid">
+          <div class="biodata-photo">
+            <img src="images/pee.jpg" alt="Meyer photo" />
+          </div>
+
+          <div class="biodata-about">
+            <h2>Meyer</h2>
+            <p>
+              My name is Meyer. I'm from Surabaya, Indonesia. I'm a student at Saint
+              Stanislaus High and I'm interested in computer science and programming.
+              I also enjoy gaming (Roblox, Call of Duty) and playing badminton.
+            </p>
+            <p>
+              I'm learning web development and electronics. This page is a simple
+              biodata example showing a responsive layout with links to my social
+              profiles below.
+            </p>
+          </div>
+
+          <div class="biodata-links" aria-label="social links">
+            <a class="card" href="https://www.instagram.com/meyer_r.k/" target="_blank" rel="noopener">
+              <i data-feather="instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a class="card" href="https://github.com/meyerreynaldo" target="_blank" rel="noopener">
+              <i data-feather="github"></i>
+              <span>GitHub profile</span>
+            </a>
+            <a class="card" href="https://www.facebook.com/meyer.reynaldo/" target="_blank" rel="noopener">
+              <i data-feather="facebook"></i>
+              <span>Facebook page</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+      <div class="footer-bottom">
+        <h5>
+          "The best way to predict the future is to create it." --- P.D.
+        </h5>
+      </div>
+      <ul class="socials">
+
+          <a href="https://www.instagram.com/meyer_r.k/">
+            <i class="size-18" data-feather="instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/meyer.reynaldo/">
+            <i class="size-18" data-feather="facebook"></i>
+          </a>
+          <a href="https://github.com/meyerreynaldo">
+            <i class="size-18" data-feather="github"></i>
+          </a>
+      </ul>
+    </div>
+  </footer>
+  
+  <!-- icons -->
+  <script>
+    feather.replace();
+  
+    function getGreeting() {
+      const now = new Date();
+      const hours = now.getHours();
+      if (hours < 12) {
+        return "Good Morning";
+      } else if (hours < 18) {
+        return "Good Afternoon";
+      } else {
+        return "Good Evening";
+      }
+    }
+  
+    function updateGreeting() {
+      const greeting = getGreeting();
+      document.getElementById('navbarLogo').innerHTML = `Hi, <span>${greeting}</span>`;
+    }
+  
+    // Update the greeting for load
+    updateGreeting();
+  
+    // Yes this is a hacky way to update the greeting every hour
+    setInterval(updateGreeting, 3600000);
+  </script>
+  <!-- icons done -->
+  
+  <!-- js -->
+  <script src="js/stuff.js"></script>
+
+</body>
+</html>

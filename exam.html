@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eksplanasi Mendalam</title>
+  <link rel="icon" type="image/x-icon" href="/images/fav.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #dateTime {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+      margin-bottom: 19px;
+    }
+
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 102%;
+      right: -150%;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 20rem;
+      height: 100vh;
+      transition: 0.3s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .navbar .navbar-nav.active {
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+
+    /* Centering the text box */
+    .crap {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically if the container has a set height */
+      min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+      text-align: center; /* Center text inside the box */
+    }
+
+    .crap h3 {
+      font-size: 1rem; 
+      color: #ffffffd0; 
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 20px; 
+      border-radius: 8px; 
+      margin: 20px; 
+      line-height: 1.6; 
+      max-width: 800px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: inline-block; /* Makes the element fit content */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar_logo" id="navbarLogo">Penjelasan, <span>Hardware dan Software</span>.</a>
+    <div class="navbar-nav">
+      <a href="Meyer's Site.html"><i data-feather="user"></i>Creator</a>
+      <a href="data.html"><i data-feather="git-pull-request"></i>Kontak</a>
+      <a href="exam.html"><i data-feather="file-text"></i>Hardware and Software Examples</a>
+    </div>
+    <div class="navbar-ex">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+  <div></div>
+  <div class="crap">
+    <h4><img src="images/har.jpg" alt="HarImage"></h4>
+    <h3>
+      Hardware
+      Definition:
+      Physical hardware components that make up computers and other electronic devices.
+      Main Components:
+      CPU (Central Processing Unit): The computer's brain that executes instructions from software.
+      RAM (Random Access Memory): Temporary memory used to store data and instructions being processed by the CPU.
+      Motherboard: The main board that connects all hardware components.
+      Storage: Devices used for permanent data storage, such as HDD (Hard Disk Drive) or SSD (Solid State Drive).
+      GPU (Graphics Processing Unit): Component for processing graphics and visuals.
+      Power Supply Unit (PSU): Provides electrical power to all computer components.
+      Peripheral Devices: Additional devices like keyboard, mouse, monitor, printer.
+      Function: Provides the physical infrastructure needed to run and operate software.
+      Stores and processes data.
+      Examples: Computer, laptop, smartphone, printer.
+    </h3>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <p id="dateTime"></p>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <h5>Meyer's Site in html 2024™</h5>
+    </div>
+    <ul class="socials">
+      <li><a href="https://www.instagram.com/meyer_r.k/"><i data-feather="instagram">@meyer_r.k</i></a></li>
+      <li></li>
+    </ul>
+  </footer>
+
+  <script>
+    feather.replace();
+
+    function updateDateTime() {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString();
+      document.getElementById('dateTime').textContent = dateTimeString;
+    }
+
+    function getGreeting() {
+      const now = new Date();
+      const hours = now.getHours();
+      if (hours < 12) {
+        return "Good Morning";
+      } else if (hours < 18) {
+        return "Good Afternoon";
+      } else {
+        return "Good Evening";
+      }
+    }
+
+    function updateGreeting() {
+      const greeting = getGreeting();
+      document.getElementById('navbarLogo').innerHTML = `Hello, ${greeting}.`;
+    }
+
+    updateGreeting();
+    setInterval(updateGreeting, 3600000);
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    document.getElementById('hamburger-menu').addEventListener('click', function() {
+      const nav = document.querySelector('.navbar-nav');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
