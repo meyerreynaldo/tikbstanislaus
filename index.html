@@ -1,105 +1,108 @@
-<html>
 <!DOCTYPE html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TIK B MEYER REYNALDO KURNIAWAN</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIK B MEYER REYNALDO KURNIAWAN</title>
     <style>
-        .info-text {
-            font-size: 20px;
-            text-align: center;
-            justify-content: center; 
-            align-items: top; 
-            display: flex;
-        }
-        .TIK {
-            padding: 200px;
-        }
-        .header {
-            font-weight: 700;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        body {
-            background-color: #7ac57cd4;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #3d91cd;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 10px;
-        }
-        .row {
-            display: flex;
-            font-size: 3rem;
-            font-weight: 700;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-        .column {
-            background-color: #01641e3d;
-            display: flex;
-            padding: 10%;
-            border: 0px;
-            text-align: center;
-            height: fit-content;
-            width: fit-content;
-        }
-        .Insta1 {
-            background-color: #ffffff00;
-            display: flex;
-            padding-right: 40%;
-        }
+      *,
+      html {
+        padding: 0;
+        margin: 0;
+        font-family: "poppins";
+        font-size: xx-large;
+        scroll-behavior: smooth;
+      }
 
-        .row2{
-            
-            display: flex;
-            margin: 10px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
+      section {
+        width: 100%;
+        height: 100vh;
+      }
+      section.main-web div.satu {
+        height: 20%;
+        background-color: rgb(86, 169, 241);
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      section.main-web div.dua {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .row3{
-            background-color: #3d91cd;
-            display: flex;
-            padding: 0px;
-            margin: 0px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
+      section.main-web div.dua div {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section.main-web div.dua div img {
+        width: 40%;
+      }
+      section.main-web div.tiga {
+        height: 15%;
+        background-color: #7ac57cd4;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      section.main-web div.tiga div {
+        display: flex;
+      }
+      section.main-web div.empat {
+        height: 15%;
+        background-color: rgb(131, 182, 228);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
     </style>
-</head>
-
-
-<body>
-<div class="header">
-    <h1>SMAK St.Stanislaus</h1>
-    <h1>&</h1>
-    <h1>Informatika UKWMS</h1>
-
-</div>
-
-<div class="row">
-    <div class="column"><img src="UKWMINFOR-modified.png" alt= ; height="300px" ; width="300px"></div>
-    <div class="TIK">TIK</div>
-    <div class="column"><img src="smaksta 1.png" alt= ; height="300px" ; width="250px"></div>
-</div>
-
-<div class="row2">
-    <div class="Insta"><img src="Instagramlogo.png" alt= ; height="40px" ; width="40px"></div><h3 class="Insta1">smak_santo_stanislaus</h3>
-    <div class="Insta"><img src="Instagramlogo.png" alt= ; height="40px" ; width="40px"></div><h3 class="Insta2">informatika.ukwms</h3>
-</div>
-
-<div></div>
-<div class="row3">
-     <h4>Copyright © 2008 ~ Now || <i>Meyer Reynaldo Kurniawan.   </i>All Rights Reserved</h4>
-</div>
-</head>
+  </head>
+  <body>
+    <section id="main-sec" class="main-web">
+      <div class="satu">
+        <h1>SMAK St.Stanislaus</h1>
+        <h1>&</h1>
+        <h1>Informatika UKWMS</h1>
+      </div>
+      <div class="dua">
+        <div style="background-color: #3cb360dd">
+          <img src="UKWMINFOR-modified.png" alt="" />
+        </div>
+        <div style="background-color: #7ac57cd4"><h1>TIK</h1></div>
+        <div style="background-color: #3cb360dd">
+          <img src="smaksta 1.png" alt="" />
+        </div>
+      </div>
+      <div class="tiga">
+        <div>
+          <img src="Instagramlogo.png" alt= ; height="40px" ; width="40px">
+          <p>smak_santo_staniuslaus</p>
+        </div>
+        <div>
+          <img src="Instagramlogo.png" alt= ; height="40px" ; width="40px">
+          <p>Informatika.ukwms</p>
+        </div>
+      </div>
+      <div class="empat">
+        <h1> &copy; Copyright 2008 ~ Now || <i>Meyer Reynaldo Kurniawan.   </i>All Rights Reserved</h1>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
