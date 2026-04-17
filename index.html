@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Katolik Santo Stanislaus</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" height="40" class="me-2">
+                <span>Ekstrakurikuler</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak & Pendaftaran</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/img/slide1.jpg" class="d-block w-100" alt="Ekstrakurikuler 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Selamat Datang</h1>
+                        <p class="lead">SMA Katolik Santo Stanislaus Surabaya</p>
+                        <a href="about.html" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/img/slide2.jpg" class="d-block w-100" alt="Ekstrakurikuler 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Kegiatan Menarik</h1>
+                        <p class="lead">Berbagai kegiatan ekstrakurikuler untuk mengembangkan bakat dan minat siswa</p>
+                        <a href="contact.html" class="btn btn-success btn-lg mt-3">Daftar Sekarang</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/img/slide3.jpg" class="d-block w-100" alt="Ekstrakurikuler 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Prestasi Gemilang</h1>
+                        <p class="lead">Raih prestasi bersama ekstrakurikuler favoritmu</p>
+                        <a href="about.html" class="btn btn-warning btn-lg mt-3">Lihat Prestasi</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Selamat Datang di SMA Katolik Santo Stanislaus Surabaya</h2>
+                    <p class="lead text-muted">
+                        SMA Katolik Santo Stanislaus Surabaya menyediakan berbagai kegiatan ekstrakurikuler 
+                        untuk mengembangkan potensi, bakat, dan minat siswa di bidang akademik maupun non-akademik.
+                    </p>
+                    <hr class="my-4">
+                    <p class="mb-4">
+                        Kami memiliki berbagai divisi ekstrakurikuler yang dapat dipilih sesuai dengan 
+                        minat dan bakat masing-masing siswa. Bergabunglah bersama kami untuk pengalaman 
+                        yang lebih berwarna selama masa sekolah
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Summary -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/img/organisasi.jpg" alt="Struktur Organisasi" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Ringkasan Organisasi</h2>
+                    <p class="text-muted">
+                        Ekstrakurikuler SMA Katolik Santo Stanislaus dikelola oleh tim yang terstruktur 
+                        dengan baik, dipimpin oleh koordinator ekstrakurikuler yang dibantu oleh 
+                        pembina dari berbagai bidang keahlian.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-people-fill text-primary fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">15+</h5>
+                                    <small class="text-muted">Divisi Ekstrakurikuler</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-trophy-fill text-warning fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">50+</h5>
+                                    <small class="text-muted">Prestasi per Tahun</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-person-check-fill text-success fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">500+</h5>
+                                    <small class="text-muted">Anggota Aktif</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-calendar-check-fill text-info fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">100+</h5>
+                                    <small class="text-muted">Kegiatan per Tahun</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-outline-primary mt-3">
+                        <i class="bi bi-arrow-right me-2"></i>Lihat Struktur Organisasi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Kegiatan Terbaru -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Highlight Kegiatan Terbaru</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan1.jpg" class="card-img-top" alt="Kegiatan 1">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">OSIS</span>
+                            <h5 class="card-title">Pembinaan OSIS 2026</h5>
+                            <p class="card-text text-muted">
+                                Kegiatan pembinaan dan pelatihan kepengurusan OSIS periode 2025/2026 
+                                yang dilaksanakan di Gedung Serbaguna.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 3 Maret 2026</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan2.jpg" class="card-img-top" alt="Kegiatan 2">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Pramuka</span>
+                            <h5 class="card-title">Perkemahan Akhir Tahun</h5>
+                            <p class="card-text text-muted">
+                                Perkemahan akhir tahun Pramuka dengan berbagai kegiatan menarik 
+                                seperti menanam lombok dan merawat Sapi.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 25 Desember 2024</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan3.jpg" class="card-img-top" alt="Kegiatan 3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Basket</span>
+                            <h5 class="card-title">Turnamen Basket Antar Sekolah</h5>
+                            <p class="card-text text-muted">
+                                Tim basket putra meraih juara 2 dalam turnamen basket antar sekolah 
+                                tingkat kota Surabaya.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 10 November 2025</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan4.jpg" class="card-img-top" alt="Kegiatan 4">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">Paduan Suara</span>
+                            <h5 class="card-title">Festival Paduan Suara</h5>
+                            <p class="card-text text-muted">
+                                Paduan suara sekolah meraih juara harapan 1 dalam festival paduan suara 
+                                gerejawi tingkat nasional.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 25 Desember 2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan5.jpg" class="card-img-top" alt="Kegiatan 5">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">English Club</span>
+                            <h5 class="card-title">English Debate Competition</h5>
+                            <p class="card-text text-muted">
+                                Tim debat bahasa Inggris berhasil masuk babak final dalam kompetisi 
+                                debat tingkat provinsi.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 11 September 2025</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kegiatan6.jpg" class="card-img-top" alt="Kegiatan 6">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Robotik</span>
+                            <h5 class="card-title">Kompetisi Robotik Nasional</h5>
+                            <p class="card-text text-muted">
+                                Tim robotik meraih juara 1 dalam kategori line follower pada kompetisi 
+                                robotik tingkat nasional.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small><i class="bi bi-calendar me-1"></i> 1 April 2026</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Tertarik Bergabung?</h2>
+            <p class="lead mb-4">
+                Daftarkan diri Anda sekarang dan jadilah bagian dari keluarga besar 
+                ekstrakurikuler SMA Katolik Santo Stanislaus!
+            </p>
+            <a href="contact.html" class="btn btn-light btn-lg">
+                <i class="bi bi-pencil-square me-2"></i>Daftar Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>SMA Katolik Santo Stanislaus</h5>
+                    <p class="mb-0">Jl. Kalijudan No.25-33, Pacar Kembang, Kec. Tambaksari</p>
+                    <p class="mb-0">Telp: (031) 3892472</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 SMA Katolik Santo Stanislaus</p>
+                    <p class="mb-0">Dibuat untuk PSAJ TIK Kelas 12</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JSku -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
